@@ -45,7 +45,7 @@ app.post('/api/cpAuthen', (req, res) => {
   try {
     axios
       .post(
-        'https://aoc-dev.truecorp.co.th/authen-stg',
+        'https://aoc-stg.truecorp.co.th/authen',
         `grant_type=client_credentials&client_id=${client_id}&client_secret=${client_secret}`
       )
       .then((authenResponse) => {
